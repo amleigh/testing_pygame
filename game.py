@@ -22,7 +22,7 @@ everything = pygame.sprite.Group()
 class Explosion(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super(Explosion, self).__init__()
-        sheet = pygame.image.load("x.png")
+        sheet = pygame.image.load("x.bmp")
         self.images = []
         for i in range(0, 768, 48):
             rect = pygame.Rect((i, 0, 48, 48))
@@ -113,7 +113,7 @@ class BulletSprite(pygame.sprite.Sprite):
 class EnemySprite(pygame.sprite.Sprite):
     def __init__(self, x_pos, groups):
         super(EnemySprite, self).__init__()
-        self.image = pygame.image.load("enemy.png").convert_alpha()
+        self.image = pygame.image.load("enemy.bmp").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.center = (x_pos, 0)
 
@@ -165,7 +165,7 @@ class StatusSprite(pygame.sprite.Sprite):
 class ShipSprite(pygame.sprite.Sprite):
     def __init__(self, groups, weapon_groups):
         super(ShipSprite, self).__init__()
-        self.image = pygame.image.load("ship.png").convert_alpha()
+        self.image = pygame.image.load("ship.bmp").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.center = (X_MAX/2, Y_MAX - 40)
         self.dx = self.dy = 0
