@@ -271,11 +271,11 @@ def main():
         pos = random.randint(0, X_MAX)
         EnemySprite(pos, [everything, enemies])
 
-    # Get some music
-    if pygame.mixer.get_init():
-        pygame.mixer.music.load("DST-AngryMod.mp3")
-        pygame.mixer.music.set_volume(0.8)
-        pygame.mixer.music.play(-1)
+    # # Get some music
+    # if pygame.mixer.get_init():
+    #     pygame.mixer.music.load("DST-AngryMod.mp3")
+    #     pygame.mixer.music.set_volume(0.8)
+    #     pygame.mixer.music.play(-1)
 
     while True:
         clock.tick(30)
@@ -348,7 +348,7 @@ def main():
             ship.shoot(STOP)
 
         if game_over:
-            pygame.mixer.music.fadeout(8000)
+            #pygame.mixer.music.fadeout(8000)
             for i in stars:
                 i.accelerate()
             if credits_timer:
