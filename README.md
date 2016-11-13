@@ -1,3 +1,5 @@
+To run type 'python3 game.py' into your command-line interface
+
 This is a simple vertical shooter game similar to old games like Xenon. 
 
 It was used a demo for a public session on programming simple games
